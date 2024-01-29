@@ -1,6 +1,6 @@
 {
   "name": "chrome-badge",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Helper for displaying badges in chrome.action API.",
   "keywords": [
     "chrome",
