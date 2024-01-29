@@ -8,8 +8,6 @@
 
 Helper for displaying badges in `chrome.action` API.
 
-## Notes
-
 ## Installation
 
 You can install this library using npm:
@@ -18,9 +16,43 @@ You can install this library using npm:
 npm install chrome-badge
 ```
 
-## Usage
+## Methods
+
+### `set`
+
+Sets the text color and background color for badge of the action. The badge is displayed on top of the icon.
+
+```typescript
+import { Badge } from "chrome-badge";
+
+const text = "999";
+const backgroundColor = "red";
+const textColor = "white";
+
+Badge.set({ text, textColor, backgroundColor });
+```
+
+### `get`
+
+Gets the badge text of the action. If no tab is specified, the non-tab-specific badge text is returned.
+
+```typescript
+import { Alarm } from "chrome-alarms";
+
+const badge = await Badge.get();
+console.log(badge);
+
+// Output:
+//   Object{
+//     backgroundColor: Array(4) [255, 0, 0, 255],
+//     text: "999",
+//     textColor: Array(4) [255, 255, 255, 255]
+//   }
+```
 
 ## Link
+
+- [chrome.action](https://developer.chrome.com/docs/extensions/reference/api/action)
 
 ## License
 
