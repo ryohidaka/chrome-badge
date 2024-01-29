@@ -2,6 +2,13 @@
   "name": "chrome-badge",
   "version": "0.1.0",
   "description": "Helper for displaying badges in chrome.action API.",
+  "keywords": [
+    "chrome",
+    "extension",
+    "extensions",
+    "ext",
+    "badge"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
